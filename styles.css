@@ -113,7 +113,7 @@
     background-image: url(./image/service-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100% !important;
 }
 button {
     padding: 15px 25px;
