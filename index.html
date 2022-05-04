@@ -70,8 +70,28 @@
             </nav>
             <div class="uk-navbar-dropbar"></div>        
         </div>
+        <div class="custom-media-bar uk-padding uk-hidden@m">
+            <div class="uk-width-1-1">
+                <a href="#" class="uk-text-bold uk-text-capitalize">
+                    <span class="uk-margin-small-right"><i class="custom-media-icon fa fa-clock-o" aria-hidden="true"></i></span>
+                    We'are Open: Mon - Sat 8:00 - 18:00
+                </a>
+            </div>
+            <div class="uk-width-1-1">
+                <a href="tel:+9710502652630" class="uk-text-bold uk-text-capitalize">
+                    <span class="uk-margin-small-right"><i class="custom-media-icon fa fa-phone" aria-hidden="true"></i></span>
+                    050 265 2630
+                </a>
+            </div>
+            <div class="uk-width-1-1">
+                <a href="mailto:amanmotorsuae@gmail.com" class="uk-text-bold uk-text-capitalize">
+                    <span class="uk-margin-small-right"><i class="custom-media-icon fa fa-envelope" aria-hidden="true"></i></span>
+                    amanmotorsuae@gmail.com
+                </a>
+            </div>
+        </div>
         <!-- navbar -->
-        <div class="uk-section-primary uk-preserve-color custom-navbar uk-visible@m">
+        <div class="uk-section-primary uk-preserve-color custom-navbar">
             <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">        
                 <nav class="uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left uk-margin-large-left">                
@@ -85,32 +105,88 @@
                     </div>                
                     <div class="uk-navbar-right uk-margin-large-right">                
                         <ul class="uk-navbar-nav">
-                            <li class="">
-                                <a href="#" class="custom-color-white uk-text-capitalize custom-nav-text">
+                            <li class="uk-visible@m">
+                                <a href="index.html" class="custom-color-white uk-text-capitalize custom-nav-text">
                                     home
                                 </a>
                             </li>
-                            <li class="">
-                                <a href="#" class="custom-color-white uk-text-capitalize custom-nav-text">
+                            <li class="uk-visible@m">
+                                <a href="#about" class="custom-color-white uk-text-capitalize custom-nav-text">
                                     about
                                 </a>
                             </li>
-                            <li class="">
-                                <a href="#" class="custom-color-white uk-text-capitalize custom-nav-text">
+                            <li class="uk-visible@m">
+                                <a href="#service" class="custom-color-white uk-text-capitalize custom-nav-text">
                                     service
                                 </a>
                             </li>
-                            <li class="">
-                                <a href="#" class="custom-color-white uk-text-capitalize custom-nav-text">
+                            <li class="uk-visible@m">
+                                <a href="#contact" class="custom-color-white uk-text-capitalize custom-nav-text">
                                     contact
+                                </a>
+                            </li>
+                            <li class="uk-hidden@m">
+                                <a href="#">
+                                    <span class=""  uk-toggle="target: #offcanvas-usage">
+                                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                                    </span>
+                                    <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+                                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                                    
+                                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                                <li class="uk-active">
+                                                    <a href="#">
+                                                        <img src="./image/logo.png" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="index.html">
+                                                        <span class="uk-margin-small-right" uk-icon="icon: home"></span>
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#about">
+                                                        <span class="uk-margin-small-right" uk-icon="icon: user"></span>
+                                                        About Us
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#service">
+                                                        <span class="uk-margin-small-right" uk-icon="icon: settings"></span>
+                                                       Our Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#contact">
+                                                        <span class="uk-margin-small-right" uk-icon="icon: phone"></span>
+                                                        Contact Us
+                                                    </a>
+                                                </li>
+                                                <li class="uk-nav-divider" style="border-top: 1px solid black"></li>
+                                                <div class="uk-margin-top">
+                                                    <a href="">
+                                                        <i class="fa fa-youtube custom-media" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-instagram custom-media" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-linkedin custom-media" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-twitter custom-media" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </ul>                                    
+                                        </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>                
                     </div>              
                 </nav>
-                <div class="uk-container">
-                    <hr class="uk-margin-remove">
-                </div>
+                
             </div>        
         </div>
         <!-- navbar over -->
@@ -149,9 +225,11 @@
                 </div>
             </div>   
         </div>
-        <div class="uk-section">
+        <div class="uk-section" id="about">
             <div class="uk-container">
-                <h1 class="uk-text-capitalize">Who we are</h1>
+                <div class="section-head">
+                    <h4><span>Who We</span>  Are?</h4>
+                </div>
                 <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
                     <div>                    
                         <div class="uk-card uk-padding">    
@@ -165,67 +243,49 @@
                         </div>
                     </div>
                 </div>  
-                <h3 class="uk-margin-small uk-text-bold">We Only Provide Quality Car Services</h3>  
-                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
-                    <div style="display: flex; justify-content: center; align-items: center;">                    
-                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
-                            <img src="https://img.icons8.com/officel/64/000000/broom.png"/>
-                            <h3 class="uk-margin-small">Natural Cleaners</h3>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: center; align-items: center;">                    
-                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
-                            <img src="https://img.icons8.com/office/64/000000/wheel.png"/>
-                            <h3 class="uk-margin-small">Tire Shines</h3>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: center; align-items: center;">                    
-                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
-                            <img src="https://img.icons8.com/office/64/000000/carpet-cleaning.png"/>
-                            <h3 class="uk-margin-small">Brake repair</h3>
-                        </div>
-                    </div>
-                                        
-                </div> 
             </div>
         </div>
-        <div class="uk-section service-bg" uk-parallax="bgy: -200">
-            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                <div style="display: flex; justify-content: center; align-items: center;">                    
-                    <div class="uk-card uk-padding">    
-                       <h5 class="custom-color-white uk-margin-small">What We’re Offering</h5>
-                       <h2 class="custom-color-white uk-margin-small uk-text-bold">Premium Car Washing Center</h2>
-                       <button>Make Schedule</button>
-                    </div>
+        <div class="uk-section service-bg" id="service" >
+            <section>
+                <div class=" uk-card-body" uk-parallax="bgy: -200" >
+                    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                        <div style="display: flex; justify-content: center; align-items: center;">                    
+                            <div class="uk-card uk-padding">    
+                               <h5 class="custom-color-white uk-margin-small">What We’re Offering</h5>
+                               <h2 class="custom-color-white uk-margin-small uk-text-bold">Premium Car Washing Center</h2>
+                               <button>Make Schedule</button>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <ul class="uk-list">
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Glass Replacement</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Work Recondition</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Chassis Straightening and Alignment</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Panel Replacement</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Panel Repairs</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <ul class="uk-list">
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Repair All type of accidents</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Engine Cooling System Flush & Repair</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Force That Keeps Us Growing</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> State Emissions Inspection</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Vehicle preventative Maintenance</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <ul class="uk-list">
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Wheel alignment</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Dectrical Diagnostics</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Engine cooling system maintenance</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Exhaust system repair</li>
+                                <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Machines. Honesty, Sincere Dedication</li>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <ul class="uk-list">
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Glass Replacement</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Work Recondition</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Chassis Straightening and Alignment</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Panel Replacement</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Body Panel Repairs</li>
-                    </ul>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <ul class="uk-list">
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Repair All type of accidents</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Engine Cooling System Flush & Repair</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Force That Keeps Us Growing</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> State Emissions Inspection</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Vehicle preventative Maintenance</li>
-                    </ul>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <ul class="uk-list">
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Wheel alignment</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Dectrical Diagnostics</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Engine cooling system maintenance</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Exhaust system repair</li>
-                        <li class="custom-white-text" ><span><i class="fa fa-wrench" aria-hidden="true"></i></span> Machines. Honesty, Sincere Dedication</li>
-                    </ul>
-                </div>
-            </div> 
+            </section>
         </div>
         <div class="uk-section">
             <div class="uk-container" style="background-color: #ff671f;">
@@ -236,11 +296,164 @@
             </div>
                       
         </div>
-        <div class="uk-section">
+        <div class="uk-section uk-section-muted" >
             <div class="uk-container">
-                <h1 class="uk-text-capitalize">Our Working Process</h1>
-                
+                <div class="section-head col-sm-12">
+                    <h4><span>We Only Provide Quality
+                        </span>  Car Services</h4>
+                </div>
+                <div class="container">
+                    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                        <div>
+                            <div class="uk-card">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+                                    <h3>Natural Cleaners</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-anchor"></i></span>
+                                    <h3>Tire Shines</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-hourglass-half"></i></span>
+                                    <h3>Mat Washing</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+                                  <h3>Wheel alignment</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>               
             </div>
         </div>
+        <!-- service -->
+        <div class="uk-section">
+            <div class="section-head">
+                <h4><span>What We </span> Do For You?</h4>
+            </div>
+            <div class="services">
+                <div class="">
+                    
+                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-body">
+                                <div class="box"> 
+                                    <i class="fa fa-home fa-3x mb-4"></i>
+                                    <h4>Body Panel Repairs</h4>
+                                    <p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+                                    <a class="readmore" href="#"><span>Schedule</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body">
+                                <div class="box"> 
+                                    <i class="fa fa-home fa-3x mb-4"></i>
+                                    <h4>Body Panel Replacement</h4>
+                                    <p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+                                    <a class="readmore" href="#"><span>Schedule</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body">
+                                <div class="box"> 
+                                    <i class="fa fa-home fa-3x mb-4"></i>
+                                    <h4>Glass Replacement</h4>
+                                    <p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+                                    <a class="readmore" href="#"><span>Schedule</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-section-bg" style="padding-bottom: 0px!important;" id="contact">
+            <h1 class="text-capitalize custom-title text-center p-1">Make Scheduling</h1>
+            <div class="uk-container">
+                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <div class="contact-form">
+                                <h2 class="absolute-text">Contact Us</h2>
+                                <form action="">
+                                    <div class="row" uk-grid>
+                                        <div class="uk-width-1-2">
+                                            <div>
+                                                <input type="text" placeholder="First Name*">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2">
+                                            <div>
+                                                <input type="text" placeholder="Last Name*">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" uk-grid>
+                                        <div class="uk-width-1-2">
+                                            <div>
+                                                <input type="tel" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2">
+                                            <div>
+                                                <input type="mail" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-1">
+                                            <textarea name="message" id="message" cols="10" rows="8" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <p><input type="submit" value="Submit"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <div class="row p-3" uk-grid>
+                                <div class="uk-width-1-1">
+                                  <h2 class="custom-color-white">Get In Touch</h2>
+                                </div>
+                                <div class="" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <div>
+                                          <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                    </div> 
+                                    <div class="uk-width-expand">
+                                        <div>
+                                            <p class="custom-color-white uk-margin-small">Jebel Ali Industrial,<br>
+                                                Area No: 1 Leader Ware House,
+                                                No.E6 Opposite Alshami Sugar,<br>
+                                                Dubai U.A.E
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.3856968727314!2d55.1065970150053!3d24.98700688399433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36af7359b5994ca5!2zMjTCsDU5JzEzLjIiTiA1NcKwMDYnMzEuNiJF!5e0!3m2!1sen!2sin!4v1651645086081!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+              <hr class="uk-margin-remove">
+              <p class="uk-text-center uk-padding-small uk-margin-remove">2022 © Copyright. All Rights Reserved</p>
+            </div>
+          </div>
     </body>
 </html>
